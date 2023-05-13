@@ -25,7 +25,7 @@ Entonces la aplicación me muestra el precio total del mantenimiento incluyendo 
 ```mermaid
 graph TD; 
 Inicio(Inicio)-->IngresarDatos(Ingresar datos); IngresarDatos(Ingresar datos)-->ValidarDatos(Validar datos); ValidarDatos(Validar datos)-->|Datos válidos|Calculo(Cálculo); ValidarDatos(Validar datos)-->|Datosinválidos|IngresarDatos(Ingresar datos); Calculo(Cálculo)-->MostrarResultados(Mostrar resultados); MostrarResultados(Mostrar resultados)-->Terminar(Terminar);
-
+```
 ## Pseudocódigo
 
 1. Pedir al usuario el número de documento y placa de la moto a la que se le realizará el mantenimiento.
