@@ -1,48 +1,37 @@
-Taller de Motocicletas
-Descripción
-En este proyecto se desarrollará una aplicación para un taller de motocicletas, que permita calcular los precios en conjunto de los repuestos y la mano de obra al momento de realizar el mantenimiento de una moto. Además, se deberá registrar la información básica de cada cliente, como su número de documento asociado a la placa de su moto.
+# Taller de Motocicletas - Aplicación para calcular precios
 
-Historia de Usuario
-gherkin
-Copy code
-Funcionalidad: Calcular precio de mantenimiento de una moto
+## Descripción
+En este proyecto se busca desarrollar una aplicación que permita calcular los precios en conjunto de los repuestos y la mano de obra al momento de realizar el mantenimiento de una moto en un taller de motocicletas. Como información básica de cada cliente se debe registrar su número de documento asociado a la placa de su moto.
 
-Como un cliente del taller de motocicletas
-Quiero poder calcular el precio total del mantenimiento de mi moto
-Para saber cuánto tendré que pagar
+## Historias de usuario
+### Calcular precio de mantenimiento
+Como un cliente del taller de motocicletas, quiero poder ingresar los repuestos que necesita mi moto y ver el precio total del mantenimiento incluyendo la mano de obra, para conocer el costo total del servicio.
 
-Contexto:
-Dado que el cliente ha ingresado la información de su moto y de los repuestos necesarios
-Y ha seleccionado el tipo de mantenimiento que desea realizar
+**Criterios de aceptación:**
+- Se debe poder ingresar una lista de repuestos necesarios para el mantenimiento de la moto.
+- Se debe poder calcular el precio total de los repuestos y la mano de obra.
+- Se debe mostrar el precio total al usuario.
 
-Escenario: Calcular precio total del mantenimiento
-Cuando el cliente presiona el botón "Calcular Precio"
-Entonces se muestra el precio total del mantenimiento, incluyendo mano de obra y repuestos
-Y se permite al cliente realizar el pago en línea
+**Escenario:**
+Dado que soy un cliente del taller de motocicletas
+Cuando ingreso una lista de repuestos necesarios
+Entonces la aplicación me muestra el precio total del mantenimiento incluyendo la mano de obra.
 
-Casos de uso
-CU1: Calcular precio de mantenimiento
-CU1
+### Registrar información de cliente
+Como administrador del taller de motocicletas, quiero poder registrar la información de cada cliente incluyendo su número de documento y la placa de su moto, para poder llevar un registro de los clientes y sus motos.
 
-CU2: Registrar información de cliente
-CU2
+**Criterios de aceptación:**
+- Se debe poder registrar la información de un cliente, incluyendo su número de documento y la placa de su moto.
+- Se debe poder buscar y visualizar la información de un cliente en particular.
 
-Pseudocódigo
-Calcular precio de mantenimiento
-markdown
-Copy code
-1. Obtener la información de la moto del cliente
-2. Obtener la lista de repuestos necesarios
-3. Obtener el tipo de mantenimiento deseado
-4. Calcular el costo total de los repuestos
-5. Calcular el costo de la mano de obra según el tipo de mantenimiento
-6. Sumar el costo total de los repuestos y la mano de obra
-7. Mostrar el precio total al cliente
-8. Permitir al cliente realizar el pago en línea
-Registrar información de cliente
-css
-Copy code
-1. Obtener el número de documento del cliente
-2. Obtener la placa de la moto del cliente
-3. Registrar la información del cliente en la base de datos
-4. Asociar la información de la moto con la del cliente en la base de datos
+**Escenario:**
+Dado que soy administrador del taller de motocicletas
+Cuando registro la información de un cliente, incluyendo su número de documento y la placa de su moto
+Entonces puedo buscar y visualizar la información de ese cliente en particular.
+
+## Casos de uso
+### Calcular precio de mantenimiento
+![Calcular precio de mantenimiento](https://i.imgur.com/QlFC9Cq.png)
+
+### Registrar información de cliente
+![Registrar información de cliente](https://i.imgur.com/T7V7uT5.png)
