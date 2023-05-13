@@ -26,5 +26,14 @@ Entonces la aplicación me muestra el precio total del mantenimiento incluyendo 
 graph TD; 
 Inicio(Inicio)-->IngresarDatos(Ingresar datos); IngresarDatos(Ingresar datos)-->ValidarDatos(Validar datos); ValidarDatos(Validar datos)-->|Datos válidos|Calculo(Cálculo); ValidarDatos(Validar datos)-->|Datosinválidos|IngresarDatos(Ingresar datos); Calculo(Cálculo)-->MostrarResultados(Mostrar resultados); MostrarResultados(Mostrar resultados)-->Terminar(Terminar);
 
+## Pseudocódigo
 
+1. Pedir al usuario el número de documento y placa de la moto a la que se le realizará el mantenimiento.
+2. Verificar que los datos ingresados sean válidos y que la moto exista en la base de datos.
+3. Si los datos son válidos, mostrar un menú con las opciones de mantenimiento disponibles y pedir al usuario que seleccione una.
+4. Si el usuario selecciona una opción de mantenimiento, pedir al usuario que confirme la operación.
+5. Si el usuario confirma la operación, calcular el costo total del mantenimiento, incluyendo el costo de los repuestos y la mano de obra.
+6. Mostrar el costo total al usuario y preguntar si desea realizar otro mantenimiento.
+7. Si el usuario desea realizar otro mantenimiento, volver al paso 3.
+8. Si el usuario no desea realizar otro mantenimiento, mostrar un mensaje de despedida y finalizar el programa.
 
