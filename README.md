@@ -17,6 +17,9 @@ Dado que soy un cliente del taller de motocicletas
 Cuando ingreso una lista de repuestos necesarios
 Entonces la aplicación me muestra el precio total del mantenimiento incluyendo la mano de obra.
 
-
+**Diagrama de flujo**
+```mermaid
+graph TD; 
+Inicio(Inicio)-->IngresarDatos(Ingresar datos); IngresarDatos(Ingresar datos)-->ValidarDatos(Validar datos); ValidarDatos(Validar datos)-->|Datos válidos|Calculo(Cálculo); ValidarDatos(Validar datos)-->|Datosinválidos|IngresarDatos(Ingresar datos); Calculo(Cálculo)-->MostrarResultados(Mostrar resultados); MostrarResultados(Mostrar resultados)-->Terminar(Terminar);
 
 
