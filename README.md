@@ -18,6 +18,7 @@ Cuando ingreso una lista de repuestos necesarios
 Entonces la aplicación me muestra el precio total del mantenimiento incluyendo la mano de obra.
 
 **Casos de uso**
+
 ![CasosDeUso](https://github.com/EstebanGomezR/TallerMotos/assets/63615382/4a0da590-4c10-4d91-bef5-a23a23a9f751)
 
 **Diagrama de flujo**
