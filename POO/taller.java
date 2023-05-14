@@ -1,47 +1,42 @@
-public class EstudiantePOO
+public class UsuarioMoto
 {
     String identificacion;
     String nombre;
-    String curso;
-    double notauno;
-    double notados;
-    double notatres;
+    String placa;
+    double precioRepuestos;
+    double precioMantenimiento;
+    public double precioTotal(){
+        return this.precioRepuestos + this.precioMantenimiento;
+    }
 }
 
 
 import java.util.Scanner;
-public class Notas
+public class TallerMotos
 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int numeroEstudiantes;
-        EstudiantePOO[] losEstudiantes = new EstudiantePOO[50];
-        String identificacion, nombre, curso;
-        double nota1, nota2, nota3;
-        double promedio = 0;
-        System.out.println("Digite la cantidad de Estudiantes: ");
-        numeroEstudiantes = sc.nextInt();
-        for(int i = 0; i < numeroEstudiantes; i++){
-            System.out.println("Digite la identificacion del Estudiante: ");
+        UsuarioMoto usuarioMoto = new UsuarioMoto();
+        String identificacion, nombre, placa;
+        double precioRepuestos, precioMantenimiento;
+        double totalPago = 0;
+            System.out.println("Digite la identificacion del usuario: ");
             identificacion = sc.next();
-            System.out.println("Digite el nombre del Estudiante: ");
+            System.out.println("Digite el nombre del usuairo: ");
             nombre = sc.next();
-            System.out.println("Digite el curso del Estudiante: ");
-            curso = sc.next();
-            System.out.println("Digite la nota 1 del Estudiante: ");
-            nota1 = sc.nextDouble();
-            System.out.println("Digite la nota 2 del Estudiante: ");
-            nota2 = sc.nextDouble();
-            System.out.println("Digite la nota 3 del Estudiante: ");
-            nota3 = sc.nextDouble();
-            EstudiantePOO unEstudiante = new EstudiantePOO();
-            unEstudiante.identificacion = identificacion;
-            unEstudiante.nombre = nombre;
-            unEstudiante.curso = curso;
-            unEstudiante.notauno = nota1;
-            unEstudiante.notados = nota2;
-            unEstudiante.notatres = nota3;
-            losEstudiantes[i] = unEstudiante;
-        }
+            System.out.println("Digite la placa de la moto: ");
+            placa = sc.next();
+            System.out.println("Digite el precio de los repuestos: ");
+            precioRepuestos = sc.nextDouble();
+            System.out.println("Digite el precio del mantenimiento: ");
+            precioMantenimiento = sc.nextDouble();
+            usuarioMoto.identificacion = identificacion;
+            usuarioMoto.nombre = nombre;
+            usuarioMoto.placa = placa;
+            usuarioMoto.precioRepuestos = precioRepuestos;
+            usuarioMoto.precioMantenimiento = precioMantenimiento;
+            totalPago = usuarioMoto.precioTotal();
+         System.out.println("El precio total del servicio es de : " + totalPago);
+    
     }    
 }
